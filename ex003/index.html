@@ -23,12 +23,17 @@
 </head>
 <body>
     <h1>Aprendendo JS</h1>
+    <h2>1.3 Template string</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quas perferendis eius ea, tempore doloremque optio nisi accusamus commodi cumque excepturi repellendus impedit eveniet, beatae ut quod quae, natus dolore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, nihil ullam fugiat suscipit explicabo quae accusantium quod tempore dolorem totam debitis doloribus impedit. Delectus sint illo, nemo laudantium ipsa recusandae.</p>
 
     <script>
-        window.alert ("Minha primeira mensagem!");
-        window.confirm ("Está gostando de JS?");
-        window.prompt("Qual é o seu nome?"); //COncatenação
+        /*window.alert ("Minha primeira mensagem!");
+        window.confirm ("Está gostando de JS?");*/
+        var n1 = Number(window.prompt("Digite um número: ")); 
+        var n2 = Number(window.prompt('Digite outro número: '));
+        var s = n1 + n2;
+        window.alert("A soma dos dois numeros é:  " + String(s)); //concatenação
+        window.alert(`A soma de ${n1} + ${n2} é igual a ${s}!`); //template string
     </script>
 </body>
 </html>
